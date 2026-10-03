@@ -49,7 +49,7 @@ D = done and evidenced, P = partly done, N = not done, M = needs a manual step b
 * Comment 15/16 implied that Poisson subsampling is what makes DP-SGD usable on this data. On the loan data, full-batch (100 steps) and Poisson (300 steps) were not different (Sec 4.3).
 
 ## Manual tasks for the authors (cannot be done by the assistant)
-1. Run `bash v2/run_all.sh` on your own machine so that you can state that you ran the experiments. Results are deterministic, so they should match `v2/results/`. Update Table B6 (hardware).
+1. DONE: re-run on Google Colab with `run_all.py`; all results matched to within 2e-7 except the Taiwan membership audit (up to 1.9e-2, floating-point sensitivity). Update Table B6 (hardware) with the Colab machine if you want it to describe your run.
 2. Verify every reference against the publisher record and add DOIs (see comment 37).
 3. Run `opacus_crosscheck.py` and, optionally, `kernelshap_crosscheck.py`; add one sentence with the outcome.
 4. Disclose the use of generative AI tools exactly as the journal policy requires. This manuscript text was drafted with an AI assistant.

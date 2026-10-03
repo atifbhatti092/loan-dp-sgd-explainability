@@ -68,3 +68,8 @@ CatBoost comparison, swap in `catboost.CatBoostClassifier` trained on the same
 Code: MIT License (add a `LICENSE` file with your names before publishing).
 Data: redistributed under the original datasets' terms (Analytics Vidhya loan-prediction
 practice dataset; German Credit Data, CC BY 4.0).
+
+
+## Corrected study (v2)
+
+The corrected experiments (exact privacy accounting, leak-free nested cross-validation, three datasets, explanation stability, membership-inference audit) are in `v2/`; see `v2/README_v2.md`. `notebooks/01_original_pipeline_audit.ipynb` reproduces and audits the first version, and `notebooks/02_corrected_study.ipynb` shows every table and figure of the revised paper from the saved result files, with SHA-256 integrity checks (`v2/MANIFEST.json`). To re-run everything: `cd v2 && python run_all.py`.

@@ -10,9 +10,9 @@ def collect():
         if os.path.isfile(p): files[top] = sha(p)
         elif os.path.isdir(p):
             for d, _, fs in os.walk(p):
-                if "__pycache__" in d or "figures" in d and False: continue
+                if "__pycache__" in d or "catboost_info" in d or "results_assistant_backup" in d or "venv" in d: continue
                 for f in sorted(fs):
-                    if f.endswith((".pyc", ".log")) or f in ("MANIFEST.json", "paper_data.json"): continue
+                    if f.endswith((".pyc", ".log")) or f in ("MANIFEST.json", "paper_data.json", "FINDINGS.md", "exp1_pilot.json", "exp1_partial.json", "exp2_partial.json", ".deps_installed", "run_all.log"): continue
                     if f.endswith(".ipynb"): continue          # notebooks change when executed; their inputs are hashed instead
                     fp = os.path.join(d, f); files[os.path.relpath(fp, ROOT)] = sha(fp)
     return files
