@@ -1,0 +1,12 @@
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+pandas==3.0.2
+catboost==1.2.10
+xgboost==3.4.1
+interpret==0.7.8
+dp-accounting==0.6.0
+matplotlib
+nbformat
+nbconvert
+ipykernel
